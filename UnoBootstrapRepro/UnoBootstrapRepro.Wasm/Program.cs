@@ -10,14 +10,10 @@ namespace UnoBootstrapRepro.Wasm
     {
       var hr = new string('*', 50);
       WriteLine(hr);
-      WriteLine("Starting test");
+      WriteLine("Starting test...");
       try
       {
-        WriteLine("Local activation:");
         Activator.CreateInstance<Container>();
-
-        WriteLine("External activation:");
-        Container.ActivateContainer();
       }
       catch (MissingMethodException e)
       {

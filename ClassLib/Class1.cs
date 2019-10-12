@@ -7,9 +7,5 @@ namespace ClassLib
     public Container()
     { 
     }
-
-    public static void ActivateContainer() =>
-      Activator.CreateInstance<Container>();
-
   }
 }
